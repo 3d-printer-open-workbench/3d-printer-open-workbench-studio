@@ -1,5 +1,7 @@
 # 3D Printer Open Workbench — Studio
 
+> 3D Printer Open Workbench ailesi: [Bot + ajanlar](https://github.com/3d-printer-open-workbench/3d-printer-open-workbench-bot) · [ERP](https://github.com/3d-printer-open-workbench/3d-printer-open-workbench-erp) · **Studio**
+
 **Open Workbench Studio**, FDM yazıcılar için kendi bilgisayarınızda çalışan parametrik bir 3B model üretecidir.
 Tek bir yerel web uygulaması (FastAPI, 7870 numaralı kapı) ve tek bir MCP sunucusu, birkaç form alanından
 OrcaSlicer'a hazır, çok renkli `model.3mf` dosyaları üretir; yanında STL parçalar, görseller, 1:1 montaj şablonu,

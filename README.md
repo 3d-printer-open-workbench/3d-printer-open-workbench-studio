@@ -1,5 +1,7 @@
 # 3D Printer Open Workbench — Studio
 
+> 3D Printer Open Workbench: [Bot + agents](https://github.com/3d-printer-open-workbench/3d-printer-open-workbench-bot) · [ERP](https://github.com/3d-printer-open-workbench/3d-printer-open-workbench-erp) · **Studio**
+
 **Open Workbench Studio** is a self-hosted, parametric 3D model generator for FDM printers. One local web app
 (FastAPI, port 7870) and one MCP server turn a few form fields into print-ready, multi-colour `model.3mf` files
 for OrcaSlicer — plus STL parts, renders, a 1:1 mounting template, cost/time estimates and an AI image prompt.
