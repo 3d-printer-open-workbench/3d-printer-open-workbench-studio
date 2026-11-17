@@ -1,0 +1,7 @@
+generator: cake_topper
+name: pasta_ayse
+params:
+  text: "İyi ki doğdun\\nAyşe"
+  font: Pacifico
+  style: outline
+  accent: hearts

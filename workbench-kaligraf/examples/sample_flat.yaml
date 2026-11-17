@@ -1,0 +1,10 @@
+# Mode A: flat sign, 40 cm wide, two-tone (body + 0.6 mm face layer)
+mode: flat
+text: Portalin
+font: Montserrat
+width_cm: 40
+thickness_mm: 5
+color_style: two_tone
+colors: [siyah, beyaz]
+mounting: [tape]
+oversize_policy: split

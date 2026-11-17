@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workbench-studio"
+version = "0.1.0"
+description = "Open Workbench Studio: Kaligraf, Glow, Maker and Topo in one app (one UI, one environment, one MCP agent)"
+requires-python = ">=3.11"
+dependencies = ["workbench-core", "workbench-kaligraf", "workbench-glow", "workbench-maker", "workbench-topo"]
+
+[project.scripts]
+studio = "studio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+studio = ["web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

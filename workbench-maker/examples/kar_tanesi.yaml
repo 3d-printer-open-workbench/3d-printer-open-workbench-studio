@@ -1,0 +1,8 @@
+generator: ornament
+name: kar_tanesi_2026
+params:
+  kind: snowflake
+  seed: 42
+  size_mm: 80
+  text: "2026"
+  count: 6

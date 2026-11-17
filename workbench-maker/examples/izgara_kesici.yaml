@@ -1,0 +1,7 @@
+generator: grid_cutter
+name: kraker_izgara
+params:
+  cell: square
+  size_mm: 30
+  rows: 3
+  cols: 4

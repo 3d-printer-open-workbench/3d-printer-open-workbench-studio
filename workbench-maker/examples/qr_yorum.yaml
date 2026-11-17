@@ -1,0 +1,6 @@
+generator: qr_plaque
+name: qr_google_yorum
+params:
+  kind: review
+  link: ChIJN1t_tDeuEmsRUsoyG83frY4   # Place ID or the review link from Google Business Profile
+  mount: holes

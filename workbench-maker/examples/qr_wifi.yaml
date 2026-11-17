@@ -1,0 +1,8 @@
+generator: qr_plaque
+name: qr_wifi_kafe
+params:
+  kind: wifi
+  ssid: Workbench
+  password: gizli1234
+  show_password: true
+  mount: stand

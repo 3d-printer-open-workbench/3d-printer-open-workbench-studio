@@ -1,0 +1,58 @@
+# AI image prompt template for lit lightboxes (TR + EN). Same structure as Kaligraf's template.
+version: 1
+user_fields:
+  scene:
+    label: Mekan
+    default: salon
+    choices:
+      salon: {tr: "loş, modern bir oturma odası", en: "a dimly lit modern living room"}
+      kafe: {tr: "samimi bir kafe", en: "a cosy café"}
+      vitrin: {tr: "bir mağaza vitrini", en: "a shop window display"}
+      cocuk_odasi: {tr: "bir çocuk odası", en: "a children's room"}
+      ofis: {tr: "şık bir ofis", en: "a stylish office"}
+  wall:
+    label: Duvar / yüzey
+    default: koyu
+    choices:
+      koyu: {tr: "koyu gri boyalı duvar", en: "a dark grey painted wall"}
+      beyaz: {tr: "pürüzsüz beyaz duvar", en: "a smooth white wall"}
+      tugla: {tr: "tuğla duvar", en: "a brick wall"}
+      ahsap: {tr: "ahşap panel duvar", en: "a wood-panelled wall"}
+      masa: {tr: "ahşap bir masanın üstü", en: "the top of a wooden desk"}
+  lighting:
+    label: Ortam ışığı
+    default: karanlik
+    choices:
+      karanlik: {tr: "karanlık oda; tek ışık kaynağı lightbox'ın kendi ışığı", en: "a dark room where the lightbox is the main light source"}
+      loş: {tr: "loş sıcak ortam ışığı ve belirgin lightbox parlaması", en: "dim warm ambient light with a clearly glowing lightbox"}
+      gun_isigi: {tr: "gün ışığı (lightbox yanık ama baskın değil)", en: "daylight (the lightbox is on but not dominant)"}
+  camera:
+    label: Kamera açısı
+    default: karsidan
+    choices:
+      karsidan: {tr: "tam karşıdan, göz hizasında", en: "straight-on at eye level"}
+      hafif_yan: {tr: "hafif yandan", en: "from a slight angle"}
+      ucte_bir: {tr: "3/4 açıyla, derinlik görünecek şekilde", en: "at a three-quarter angle showing the depth"}
+      yakin: {tr: "yakın çekim", en: "close-up"}
+  scale_ref:
+    label: Ölçek referansı nesne
+    default: masa
+    choices:
+      masa: {tr: "altında bir masa", en: "a desk below it"}
+      kanepe: {tr: "altında bir kanepe", en: "a sofa below it"}
+      bitki: {tr: "yanında bir saksı bitkisi", en: "a potted plant beside it"}
+      yok: {tr: "", en: ""}
+  extra:
+    label: Ek ayrıntılar
+    default: ""
+templates:
+  tr: >-
+    Fotogerçekçi bir iç mekan fotoğrafı. Mekan: {scene}. Yüzey: {wall}. Ürün: "{text}" yazan/logolu, {product_tr}.
+    {dimension_tr} {color_tr} {lit_tr} {font_tr} {mounting_tr} {scale_tr} Işık: {lighting}. Kamera: {camera}.
+    Ekli referans görseldeki ürünün şeklini, yazı/logo biçimlerini, renklerini ve oranlarını birebir koru; yazıyı değiştirme.
+    Gerçekçi ışık yayılımı, hafif parlama (bloom), yüksek ayrıntı, temiz kompozisyon.{extra_tr}
+  en: >-
+    A photorealistic interior photo. Setting: {scene}. Surface: {wall}. Product: {product_en} showing "{text}".
+    {dimension_en} {color_en} {lit_en} {font_en} {mounting_en} {scale_en} Lighting: {lighting}. Camera: {camera}.
+    Keep the product in the attached reference image exactly as it is: same lettering/logo shapes, colours and proportions;
+    do not change the text. Realistic light falloff, subtle bloom, fine detail, clean composition.{extra_en}

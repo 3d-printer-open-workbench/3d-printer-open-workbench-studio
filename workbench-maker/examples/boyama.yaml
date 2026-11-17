@@ -1,0 +1,7 @@
+generator: coloring_plaque
+name: boyama_ece
+params:
+  picture: shape
+  shape: star
+  name: Ece
+  count: 10

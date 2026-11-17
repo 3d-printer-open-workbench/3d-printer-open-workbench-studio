@@ -1,0 +1,7 @@
+generator: ornament
+name: litofan_kalp
+params:
+  kind: photo
+  photo: /path/to/photo.jpg   # your own JPG / PNG
+  shape: heart
+  size_mm: 80

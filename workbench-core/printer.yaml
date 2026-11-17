@@ -1,0 +1,6 @@
+# Time-model calibration for the estimate (job.json "estimated_print_time").
+# Compare the estimate with a real print and adjust:
+flow_mm3_s: 9          # effective average volumetric flow incl. acceleration/travel losses
+colour_change_s: 40    # seconds per CANVAS filament swap (incl. purge)
+layer_overhead_s: 2.5  # layer change / travel per layer
+plate_setup_s: 360     # heat-up, levelling, slow first layer, per plate

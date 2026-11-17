@@ -1,0 +1,27 @@
+# systemd *user* unit for Open Workbench Studio (web UI + MCP on 127.0.0.1:7870).
+# `./install.sh --systemd` fills in the @...@ placeholders and installs it to ~/.config/systemd/user/.
+# Manual install: replace @REPO@ (repository path), @STATE@ and @WORK@ (data folders), then
+#   systemctl --user daemon-reload && systemctl --user enable --now workbench-studio.service
+# Keep it running after logout: sudo loginctl enable-linger "$USER"
+[Unit]
+Description=Open Workbench Studio - parametric model generators, web UI and MCP (:7870)
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=@REPO@
+Environment="STUDIO_HOME=@STATE@"
+Environment="STUDIO_WORK_DIR=@WORK@"
+Environment="PYTHONNOUSERSITE=1"
+Environment="PYTHONUNBUFFERED=1"
+# Optional settings (uncomment or put them in ~/.config/workbench-studio.env):
+# Environment="WORKBENCH_ORCA=/opt/orcaslicer/AppRun"
+# Environment="WORKBENCH_ERP_URL=http://127.0.0.1:8000"
+# Environment="TOPO_USER_AGENT=MyWorkbench-Topo/0.1 (contact: you@example.com)"
+EnvironmentFile=-%h/.config/workbench-studio.env
+ExecStart=@REPO@/.venv/bin/python -m studio.cli ui --host 127.0.0.1 --port 7870 --no-browser
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,29 @@
+# Example filament palette for Open Workbench Studio (neutral sample values, not a real stock list).
+# Copy to ~/.local/share/workbench-studio/renk_paleti.yaml (or point WORKBENCH_PALETTE at your own file).
+# Fields (Turkish keys, shared with the Open Workbench bot):
+#   ad          display name of the colour            (required)
+#   hex         measured sRGB colour, #RRGGBB          (required)
+#   marka       brand / product line                   (optional)
+#   dogrulandi  true = HEX measured or tuned by eye on /kartela; false = estimate (shown with "~")
+#   erp_filament_id  filament id in the optional Open Workbench ERP (colour sync when WORKBENCH_ERP_URL is set)
+renkler:
+- ad: Matte White
+  hex: '#F2F2EE'
+  marka: Generic PLA
+  dogrulandi: false
+- ad: Matte Black
+  hex: '#1E1E1E'
+  marka: Generic PLA
+  dogrulandi: false
+- ad: Bone
+  hex: '#E3D9C6'
+  marka: Generic PLA
+  dogrulandi: false
+- ad: Terracotta
+  hex: '#C8664A'
+  marka: Generic PLA
+  dogrulandi: false
+- ad: Forest Green
+  hex: '#2E5E3A'
+  marka: Generic PETG
+  dogrulandi: false

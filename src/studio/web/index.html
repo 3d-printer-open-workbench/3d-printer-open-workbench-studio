@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<link rel="icon" href="/static/studio.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/app.css">
+<script type="importmap">
+{"imports": {"three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+             "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/"><img src="/static/studio.svg" alt="">{{TITLE}}</a>
+  <div class="ask" id="ask">
+    <svg viewBox="0 0 24 24" class="ico"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input id="q" placeholder="Ne yapmak istersin? — ürün ya da eski iş ara (ör. anahtarlık, harita, Ayşe)" autocomplete="off" spellcheck="false">
+    <kbd>Ctrl K</kbd>
+    <div class="results" id="results" hidden></div>
+  </div>
+  <button class="printer" id="printer" title="Yazıcıdaki filamentleri düzenle">
+    <span class="dot"></span><span>Yazıcı</span><span class="slots" id="slots"></span>
+  </button>
+</header>
+
+<!-- home -->
+<section class="view home" id="home" hidden>
+  <div class="hello"><h1 id="hello">Bugün ne üretiyoruz?</h1>
+    <p>Dört atölye, tek ekran. Hepsi aynı önizleme, aynı renkler, aynı baskı dosyası.</p></div>
+  <div class="fams" id="fams"></div>
+  <div class="row2">
+    <div class="panel"><h2>Son işler</h2><div class="recent" id="recent"></div></div>
+    <div class="panel"><div class="ph"><h2>Yazıcıdaki filamentler</h2><button class="link" id="editFil">Düzenle</button></div>
+      <div class="ams" id="ams"></div></div>
+  </div>
+</section>
+
+<!-- family -->
+<section class="view family" id="family" hidden>
+  <div class="crumb"><a href="#/">Ana sayfa</a> ›</div>
+  <h1 id="famTitle"></h1>
+  <div class="pgrid" id="pgrid"></div>
+</section>
+
+<!-- Glow hardware catalogue -->
+<section class="view family" id="hw" hidden>
+  <div class="crumb"><a href="#/">Ana sayfa</a> › <a href="#/aile/isik">Işıklı ürünler</a> › Donanım</div>
+  <h1>Donanım kataloğu</h1>
+  <p class="pdesc" id="hwInfo">LED, kontrolcü ve difüzör kayıtları. Değerler gerçek ürün ölçülene kadar varsayımdır (not sütununa bakın).</p>
+  <div class="seg" id="hwTabs"><button data-k="leds" class="on">LED tipleri</button><button data-k="controllers">Kontrolcüler</button><button data-k="diffusers">Difüzör malzemeleri</button></div>
+  <div class="tablewrap"><table class="hwt" id="hwTable"></table></div>
+  <div class="hwbtns"><button class="ghost" id="hwNew">+ Yeni kayıt</button><span style="flex:1"></span>
+    <button class="ghost" id="hwReset">Varsayılana dön</button><button class="ghost" id="hwVal">Doğrula</button><button class="primary" id="hwSave">Kaydet</button></div>
+  <div id="hwMsg"></div>
+</section>
+
+<!-- editor -->
+<section class="view ed" id="editor" hidden>
+  <nav class="rail" id="rail"></nav>
+  <aside class="insp">
+    <div class="crumb" id="crumb"></div>
+    <h2 id="ptitle"></h2>
+    <p class="pdesc" id="pdesc"></p>
+    <form id="form" autocomplete="off"></form>
+  </aside>
+  <section class="stage">
+    <div class="tools" id="views">
+      <button data-v="34" class="on">3B</button><button data-v="front">Önden</button><button data-v="top">Üstten</button><button data-v="img">Görsel</button>
+    </div>
+    <div id="viewer"><canvas id="three"></canvas><img id="prevImg" alt="" hidden></div>
+    <div class="empty" id="empty"><span>Ayarları yapın; önizleme burada görünecek.</span></div>
+    <div class="busy" id="busy" hidden><div class="spinner"></div><div id="busyMsg">Hazırlanıyor…</div></div>
+    <button class="refresh" id="btnPreview" type="button">↻ Önizle</button>
+    <div class="strip" id="strip" hidden></div>
+  </section>
+  <aside class="side">
+    <button class="big" id="btnMake" type="button">Baskı dosyasını üret<small>model.3mf · OrcaSlicer'a hazır</small></button>
+    <div><h3>Tahmin</h3><div class="kv" id="est"><span>Filament</span><b>—</b><span>Süre</span><b>—</b></div></div>
+    <div id="notes"></div>
+    <div id="outputs"></div>
+  </aside>
+</section>
+
+<!-- filament editor -->
+<dialog id="filDlg">
+  <form method="dialog" id="filForm">
+    <h2>Yazıcıdaki filamentler</h2>
+    <p class="pdesc">Hangi yuvada hangi renk var? Önizlemede hangi rengi hangi yuvaya takacağınızı ve yetip yetmeyeceğini gösterir.</p>
+    <div id="filRows"></div>
+    <div class="dlgBtns"><button value="cancel" class="ghost">Vazgeç</button><button value="ok" class="primary" id="filSave">Kaydet</button></div>
+  </form>
+</dialog>
+<!-- colour capture -->
+<dialog id="capDlg">
+  <form method="dialog">
+    <h2>Renk yakala</h2>
+    <p class="pdesc" id="capInfo"></p>
+    <div class="capbtns"><label class="ghost">Fotoğraf seç<input type="file" id="capFile" accept="image/*" hidden></label>
+      <button type="button" class="ghost" id="capEye" hidden>Ekrandan seç (damlalık)</button><span class="muted">ya da Ctrl+V ile ekran görüntüsü yapıştırın</span></div>
+    <canvas id="capCanvas" hidden style="display:block;max-width:100%;margin-top:10px;border-radius:12px;cursor:crosshair"></canvas>
+    <div class="dlgBtns"><span id="capSw" class="capsw"></span><button value="cancel" class="ghost">Vazgeç</button>
+      <button class="primary" id="capUse" disabled>Bu rengi kullan</button></div>
+  </form>
+</dialog>
+<div class="toast" id="toast" hidden></div>
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

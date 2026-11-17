@@ -1,0 +1,414 @@
+fonts:
+- id: tinos
+  display_name: Tinos
+  family: Tinos
+  category: basic
+  file: Tinos-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/tinos
+  source_note: replaces Times New Roman
+- id: arimo
+  display_name: Arimo
+  family: Arimo
+  category: basic
+  file: Arimo-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/arimo
+  source_note: replaces Arial
+- id: style-script
+  display_name: Style Script
+  family: Style Script
+  category: basic
+  file: StyleScript-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/stylescript
+  source_note: replaces Beyond Script
+- id: mansalva
+  display_name: Mansalva
+  family: Mansalva
+  category: basic
+  file: Mansalva-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/mansalva
+  source_note: ''
+- id: alex-brush
+  display_name: Alex Brush
+  family: Alex Brush
+  category: basic
+  file: AlexBrush-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/alexbrush
+  source_note: replaces Gentlemens
+- id: marcellus
+  display_name: Marcellus
+  family: Marcellus
+  category: basic
+  file: Marcellus-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/marcellus
+  source_note: replaces Alta
+- id: montserrat
+  display_name: Montserrat
+  family: Montserrat
+  category: basic
+  file: Montserrat-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/montserrat
+  source_note: ''
+- id: cormorant-garamond
+  display_name: Cormorant Garamond
+  family: Cormorant Garamond
+  category: basic
+  file: CormorantGaramond-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/cormorantgaramond
+  source_note: replaces The Seasons
+- id: bebas-neue
+  display_name: Bebas Neue
+  family: Bebas Neue
+  category: basic
+  file: BebasNeue-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/bebasneue
+  source_note: ''
+- id: playfair-display
+  display_name: Playfair Display
+  family: Playfair Display
+  category: basic
+  file: PlayfairDisplay-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/playfairdisplay
+  source_note: ''
+- id: inter
+  display_name: Inter
+  family: Inter
+  category: print
+  file: Inter-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/inter
+  source_note: replaces Helvetica
+- id: jost
+  display_name: Jost
+  family: Jost
+  category: print
+  file: Jost-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/jost
+  source_note: replaces Futura
+- id: eb-garamond
+  display_name: EB Garamond
+  family: EB Garamond
+  category: print
+  file: EBGaramond-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/ebgaramond
+  source_note: ''
+- id: cinzel
+  display_name: Cinzel
+  family: Cinzel
+  category: print
+  file: Cinzel-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/cinzel
+  source_note: replaces La Luxes
+- id: bodoni-moda
+  display_name: Bodoni Moda
+  family: Bodoni Moda
+  category: print
+  file: BodoniModa-Variable.ttf
+  weight: 800
+  axes:
+    wght: 800
+    opsz: 6
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/bodonimoda
+  source_note: ''
+- id: abril-fatface
+  display_name: Abril Fatface
+  family: Abril Fatface
+  category: print
+  file: AbrilFatface-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/abrilfatface
+  source_note: replaces Vogue
+- id: righteous
+  display_name: Righteous
+  family: Righteous
+  category: print
+  file: Righteous-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/righteous
+  source_note: replaces Neon 80s
+- id: cabin
+  display_name: Cabin
+  family: Cabin
+  category: print
+  file: Cabin-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/cabin
+  source_note: replaces Gill Sans
+- id: nunito-sans
+  display_name: Nunito Sans
+  family: Nunito Sans
+  category: print
+  file: NunitoSans-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/nunitosans
+  source_note: replaces Avenir
+- id: syncopate
+  display_name: Syncopate
+  family: Syncopate
+  category: print
+  file: Syncopate-Regular.ttf
+  weight: 400
+  axes: {}
+  license: apache
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/apache/syncopate
+  source_note: replaces Kiona
+- id: cormorant
+  display_name: Cormorant
+  family: Cormorant
+  category: print
+  file: Cormorant-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/cormorant
+  source_note: ''
+- id: fraunces
+  display_name: Fraunces
+  family: Fraunces
+  category: print
+  file: Fraunces-Variable.ttf
+  weight: 900
+  axes:
+    wght: 900
+    SOFT: 100
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/fraunces
+  source_note: replaces Nove
+- id: dancing-script
+  display_name: Dancing Script
+  family: Dancing Script
+  category: cursive
+  file: DancingScript-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/dancingscript
+  source_note: replaces Adelia
+- id: the-nautigal
+  display_name: The Nautigal
+  family: The Nautigal
+  category: cursive
+  file: TheNautigal-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/thenautigal
+  source_note: replaces Brittany
+- id: parisienne
+  display_name: Parisienne
+  family: Parisienne
+  category: cursive
+  file: Parisienne-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/parisienne
+  source_note: ''
+- id: caramel
+  display_name: Caramel
+  family: Caramel
+  category: cursive
+  file: Caramel-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/caramel
+  source_note: replaces Barcelony
+- id: caveat
+  display_name: Caveat
+  family: Caveat
+  category: cursive
+  file: Caveat-Variable.ttf
+  weight: 400
+  axes:
+    wght: 400
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/caveat
+  source_note: replaces Photoshoot
+- id: pacifico
+  display_name: Pacifico
+  family: Pacifico
+  category: cursive
+  file: Pacifico-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/pacifico
+  source_note: ''
+- id: great-vibes
+  display_name: Great Vibes
+  family: Great Vibes
+  category: cursive
+  file: GreatVibes-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/greatvibes
+  source_note: replaces Amoresa
+- id: sacramento
+  display_name: Sacramento
+  family: Sacramento
+  category: cursive
+  file: Sacramento-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/sacramento
+  source_note: ''
+- id: cedarville-cursive
+  display_name: Cedarville Cursive
+  family: Cedarville Cursive
+  category: cursive
+  file: Cedarville-Cursive.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/cedarvillecursive
+  source_note: replaces TingTong
+- id: allison
+  display_name: Allison
+  family: Allison
+  category: cursive
+  file: Allison-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/allison
+  source_note: replaces Jalliestha
+- id: shadows-into-light
+  display_name: Shadows Into Light
+  family: Shadows Into Light
+  category: cursive
+  file: ShadowsIntoLight.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/shadowsintolight
+  source_note: replaces Amsterdam
+- id: moon-dance
+  display_name: Moon Dance
+  family: Moon Dance
+  category: cursive
+  file: MoonDance-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/moondance
+  source_note: replaces Moontime
+- id: ms-madi
+  display_name: Ms Madi
+  family: Ms Madi
+  category: cursive
+  file: MsMadi-Regular.ttf
+  weight: 400
+  axes: {}
+  license: ofl
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/ofl/msmadi
+  source_note: replaces Halimun
+- id: yellowtail
+  display_name: Yellowtail
+  family: Yellowtail
+  category: cursive
+  file: Yellowtail-Regular.ttf
+  weight: 400
+  axes: {}
+  license: apache
+  licensed: true
+  source: https://github.com/google/fonts/tree/main/apache/yellowtail
+  source_note: ''

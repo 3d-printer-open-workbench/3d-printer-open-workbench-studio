@@ -1,0 +1,10 @@
+generator: plate
+name: kalp_plaka
+params:
+  shape: heart
+  width_mm: 80
+  thickness_mm: 3
+  color: "#C8664A"
+  text: "Ayşe"
+  font: Righteous
+  text_color: "#FFFFFF"

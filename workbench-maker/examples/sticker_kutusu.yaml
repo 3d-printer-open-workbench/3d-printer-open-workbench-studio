@@ -1,0 +1,10 @@
+generator: container
+name: sticker_kutusu
+params:
+  shape: square
+  width_mm: 100
+  height_mm: 40
+  rows: 2
+  cols: 3
+  lid: true
+  lid_text: Sticker

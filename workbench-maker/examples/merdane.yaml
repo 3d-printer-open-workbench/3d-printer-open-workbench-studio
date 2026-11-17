@@ -1,0 +1,7 @@
+generator: roller
+name: merdane_kalp
+params:
+  pattern: hearts
+  size_mm: 12
+  bore_mm: 25
+  length_mm: 120

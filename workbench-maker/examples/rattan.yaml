@@ -1,0 +1,5 @@
+generator: rattan_letters
+name: rattan_evim
+params:
+  text: EVİM
+  height_mm: 120

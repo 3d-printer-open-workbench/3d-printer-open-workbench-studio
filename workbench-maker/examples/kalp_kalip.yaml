@@ -1,0 +1,10 @@
+generator: thermoform
+name: kalp_kalip
+params:
+  sheet: petg_05
+  source: shape
+  shape: heart
+  width_mm: 80
+  depth_mm: 12
+  flange_mm: 5
+  hanger: true

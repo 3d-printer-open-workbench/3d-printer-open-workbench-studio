@@ -1,0 +1,10 @@
+generator: keychain
+name: anahtarlik_mehmet_nfc
+params:
+  style: name
+  text: Mehmet
+  font: Righteous
+  rim: true
+  nfc: true
+  nfc_d: 25
+  count: 4

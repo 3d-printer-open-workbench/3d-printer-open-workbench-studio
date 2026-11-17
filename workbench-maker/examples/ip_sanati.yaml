@@ -1,0 +1,7 @@
+generator: string_art
+name: ip_sanati_kalp
+params:
+  source: shape
+  shape: heart
+  width_mm: 140
+  pitch_mm: 8

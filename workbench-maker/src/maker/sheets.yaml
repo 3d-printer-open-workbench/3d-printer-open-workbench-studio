@@ -1,0 +1,11 @@
+# Thermoform sheets. ALL VALUES ARE ASSUMPTIONS for typical market PETG sheet until measured with the
+# calibration coupon (T4). Override: ~/.config/workbench-maker/sheets.yaml (or $MAKER_SHEETS).
+# thickness_mm: nominal; clearance_mm: extra gap between male and female mold beyond the sheet;
+# form_temp_c: heat-gun / oven range; max_draw: max depth / width of the formed dome;
+# min_radius_mm: smallest outline corner radius that forms without tearing/webbing. Sheet prices: costs.yaml (sheet_try_m2).
+default: petg_05
+sheets:
+  petg_03: {label: "PETG 0.3 mm", material: PETG, thickness_mm: 0.3, clearance_mm: 0.15, form_temp_c: [120, 150], max_draw: 0.35, min_radius_mm: 1.5, note: "ASSUMPTION"}
+  petg_05: {label: "PETG 0.5 mm", material: PETG, thickness_mm: 0.5, clearance_mm: 0.2, form_temp_c: [130, 160], max_draw: 0.40, min_radius_mm: 2.0, note: "ASSUMPTION"}
+  petg_075: {label: "PETG 0.75 mm", material: PETG, thickness_mm: 0.75, clearance_mm: 0.25, form_temp_c: [135, 165], max_draw: 0.40, min_radius_mm: 3.0, note: "ASSUMPTION"}
+  petg_10: {label: "PETG 1.0 mm", material: PETG, thickness_mm: 1.0, clearance_mm: 0.3, form_temp_c: [140, 170], max_draw: 0.45, min_radius_mm: 4.0, note: "ASSUMPTION"}

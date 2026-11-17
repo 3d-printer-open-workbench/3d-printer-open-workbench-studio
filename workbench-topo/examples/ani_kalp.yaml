@@ -1,0 +1,11 @@
+name: ani_kordon
+mode: ani
+place: "Kordon, Alsancak, İzmir"
+width_km: 1.8
+shape: heart
+size_mm: 180
+theme: Romantik
+title: "Ayşe & Ali"
+subtitle: "14.02.2026"
+markers:
+  - {lat: 38.4370, lon: 27.1430, kind: heart}

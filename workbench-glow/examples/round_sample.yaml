@@ -1,0 +1,12 @@
+design: round
+text: Workbench
+font: Montserrat
+diameter_mm: 200
+depth_mm: 45
+rim_mm: 10
+frame_color: "#1F4D3A"
+diffuser: pla_white
+led: ws2812b_10mm
+controller: bt_rgb_mini
+mount: stand
+job_id: round_sample

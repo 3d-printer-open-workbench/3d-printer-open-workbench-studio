@@ -1,0 +1,7 @@
+generator: thermo_coupon
+name: kupon_petg05
+params:
+  sheet: petg_05
+  clear_min: 0.1
+  clear_step: 0.1
+  count: 4

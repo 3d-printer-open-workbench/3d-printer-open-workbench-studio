@@ -1,0 +1,69 @@
+# AI image prompt template (TR + EN) for Maker products, same format as Kaligraf / Glow (workbench_core.prompt).
+# Auto fields come from the job; user fields have defaults (per product: see products.<key>.scene) and can be set in
+# the job file under `prompt:` ({scene: kafe, extra: "..."}); a value that is not a choice key is used verbatim.
+version: 1
+
+user_fields:
+  scene:
+    label: Mekan
+    default: masa
+    choices:
+      masa: {tr: "aydınlık bir çalışma masası", en: "a bright desk"}
+      salon: {tr: "modern bir oturma odası", en: "a modern living room"}
+      mutfak: {tr: "ahşap tezgahlı aydınlık bir mutfak", en: "a bright kitchen with a wooden counter"}
+      kafe: {tr: "samimi bir kafenin tezgahı", en: "the counter of a cosy café"}
+      yilbasi: {tr: "ışıklı bir yılbaşı ağacının önü", en: "in front of a lit Christmas tree"}
+      cocuk_odasi: {tr: "renkli bir çocuk odası", en: "a bright children's room"}
+      dogum_gunu: {tr: "süslenmiş bir doğum günü masası", en: "a decorated birthday table"}
+      vitrin: {tr: "bir mağaza vitrini", en: "a shop window display"}
+      duvar: {tr: "beyaz boyalı bir duvar", en: "a white painted wall"}
+  lighting:
+    label: Işık
+    default: gun_isigi
+    choices:
+      gun_isigi: {tr: "yumuşak doğal gün ışığı", en: "soft natural daylight"}
+      sicak: {tr: "sıcak akşam ışığı", en: "warm evening light"}
+      studyo: {tr: "yumuşak stüdyo ışığı", en: "soft studio lighting"}
+  camera:
+    label: Kamera açısı
+    default: hafif_ust
+    choices:
+      hafif_ust: {tr: "hafif yukarıdan, 45 derece", en: "from slightly above, at 45 degrees"}
+      karsidan: {tr: "tam karşıdan, göz hizasında", en: "straight-on at eye level"}
+      yakin: {tr: "yakın çekim, arka plan bulanık", en: "close-up with a blurred background"}
+  extra:
+    label: Ek ayrıntılar
+    default: ""
+
+products:
+  thermoform: {tr: "parlak şeffaf kubbeli termoform yılbaşı süsü", en: "a thermoformed Christmas ornament with a glossy clear dome", scene: yilbasi}
+  thermo_coupon: {tr: "termoform kalıp deneme kuponu", en: "a small thermoforming test mold", scene: masa}
+  keychain: {tr: "3B baskı kişiye özel anahtarlık, bir anahtarla birlikte", en: "a personalised 3D printed keychain with a key on its ring", scene: masa}
+  qr_plaque: {tr: "masada duran QR kodlu plaket", en: "a QR code plaque standing on the table", scene: kafe}
+  pet_tag: {tr: "evcil hayvan künyesi, tasmaya takılı", en: "a pet ID tag hanging from a collar", scene: salon}
+  cookie_cutter: {tr: "kurabiye kesici ve damgası, yanında kesilmiş hamur kurabiyeler", en: "a cookie cutter and stamp next to freshly cut dough cookies", scene: mutfak}
+  letter_stamp: {tr: "yazı damgası ve damgalanmış şeker hamuru", en: "a letter stamp next to stamped fondant", scene: mutfak}
+  grid_cutter: {tr: "ızgara kurabiye kesici ve kesilmiş kare krakerler", en: "a grid cookie cutter with cut square crackers", scene: mutfak}
+  roller: {tr: "desenli merdane ve desen basılmış açılmış hamur", en: "a textured rolling pin sleeve on rolled dough showing its pattern", scene: mutfak}
+  cake_topper: {tr: "pastanın üstüne takılmış yazılı pasta süsü", en: "a script cake topper standing in a frosted cake", scene: dogum_gunu}
+  container: {tr: "3B baskı kalemlik / kutu, içinde kalemler ve küçük eşyalar", en: "a 3D printed pen holder / box holding pens and small items", scene: masa}
+  photo_stand: {tr: "fotoğraflı 3B baskı çerçeve / stand", en: "a 3D printed photo frame / stand holding a printed photo", scene: masa}
+  ornament: {tr: "yılbaşı ağacına asılmış süs", en: "an ornament hanging on a Christmas tree", scene: yilbasi}
+  string_art: {tr: "renkli iple sarılmış çivili ip sanatı panosu", en: "a string art board wound with coloured thread", scene: salon}
+  rattan_letters: {tr: "hasır örgü görünümlü dekor harfler, raf üstünde", en: "rattan-style woven decor letters on a shelf", scene: salon}
+  coloring_plaque: {tr: "çocukların boyadığı kabarık çizgili boyama plaketi, yanında boya kalemleri", en: "a raised-line colouring plaque painted by a child, with paints next to it", scene: cocuk_odasi}
+  nameplate: {tr: "masada duran kişiye özel 3B baskı isimlik, standında eğik duruyor", en: "a personalised 3D printed desk name plate leaning in its stand on an office desk", scene: masa}
+  vessel: {tr: "Japon tarzı 3B baskı kase / vazo, içinde kuru meyve ya da kuru çiçek", en: "a Japanese-style 3D printed bowl / vase holding dried fruit or dried flowers", scene: salon}
+  plate: {tr: "3B baskı şekil plakası", en: "a 3D printed shape plate", scene: masa}
+
+templates:
+  tr: >-
+    Fotogerçekçi bir ürün fotoğrafı. Mekan: {scene}. Ürün: {product_tr}{text_tr}. {dimension_tr} {color_tr}
+    {material_tr} Işık: {lighting}. Kamera: {camera}. Ekli referans görseldeki ürünün şeklini, renklerini, yazısını
+    ve oranlarını birebir koru; yazıyı değiştirme, harf ekleme veya çıkarma. 3B baskı yüzeyi, ince katman çizgileri,
+    gerçekçi gölgeler, yüksek ayrıntı, temiz kompozisyon.{extra_tr}
+  en: >-
+    A photorealistic product photo. Setting: {scene}. Product: {product_en}{text_en}. {dimension_en} {color_en}
+    {material_en} Lighting: {lighting}. Camera: {camera}. Keep the product in the attached reference image exactly as
+    it is: same shape, colours, text and proportions; do not change, add or remove any letters. 3D printed surface
+    with fine layer lines, realistic shadows, fine detail, clean composition.{extra_en}

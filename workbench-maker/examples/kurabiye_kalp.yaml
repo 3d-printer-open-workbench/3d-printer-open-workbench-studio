@@ -1,0 +1,7 @@
+generator: cookie_cutter
+name: kurabiye_kalp
+params:
+  source: shape
+  shape: heart
+  width_mm: 70
+  stamp: contour

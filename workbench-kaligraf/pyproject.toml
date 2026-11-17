@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workbench-kaligraf"
+version = "0.1.1"
+description = "Print-ready 3D models for wall signs and letters (Workbench)"
+requires-python = ">=3.11"
+dependencies = [
+    "fonttools>=4.40",
+    "shapely>=2.0",
+    "manifold3d>=2.5",
+    "trimesh>=4.0",
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "mapbox-earcut>=1.0",
+    "scipy>=1.11",
+    "uharfbuzz>=0.38",
+    "opencv-python-headless>=4.8",
+    "potracer>=0.0.4",
+    "svgelements>=1.9",
+    "pillow>=10",
+    "matplotlib>=3.8",
+    "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "rtree>=1.0"]
+
+[project.scripts]
+kaligraf = "kaligraf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

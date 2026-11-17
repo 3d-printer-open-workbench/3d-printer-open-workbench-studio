@@ -1,0 +1,8 @@
+# Likya Yolu'nun bir etabı ya da tamamı: OSM rota numarasını arayüzde "OSM'de rota ara" ile bulun.
+name: likya_yolu
+mode: rota
+osm_relation: 0        # <- buraya relation id
+theme: Likya
+size_mm: 240
+margin_pct: 6
+title: "LİKYA YOLU"

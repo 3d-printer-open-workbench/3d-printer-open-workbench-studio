@@ -1,0 +1,6 @@
+generator: letter_stamp
+name: damga_afiyet
+params:
+  text: Afiyet olsun
+  font: Pacifico
+  letter_mm: 12

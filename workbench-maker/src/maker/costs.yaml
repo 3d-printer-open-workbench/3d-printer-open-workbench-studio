@@ -1,0 +1,12 @@
+# Cost table for estimates. PRICES ARE ASSUMPTIONS until you enter yours:
+# copy to ~/.config/workbench-maker/costs.yaml (or $MAKER_COSTS) and edit.
+filament_try_kg: {PLA: 550, PETG: 600}   # ASSUMPTION (TRY per kg spool)
+density_g_cm3: {PLA: 1.24, PETG: 1.27}
+infill: {mold: 0.12, part: 0.15, flat: 0.15, solid: 1.0}  # molds only see hand pressure: sparse gyroid (model.3mf: 10 %, absorbed by calibration)
+sheet_try_m2: {}                         # e.g. {petg_05: 450}; empty = sheet cost not counted
+# Estimate -> OrcaSlicer 2.4.2 (0.20 mm Standard @Elegoo CC, 2 walls) measured on the example jobs (Nov 2026)
+calibration:
+  mold: {grams: 0.81, minutes: 2.3}
+  part: {grams: 0.95, minutes: 2.0}
+  flat: {grams: 0.81, minutes: 2.25}   # T5 keychains / plaques / tags incl. prime tower + 1 filament change (3 jobs)
+  solid: {grams: 1.0, minutes: 3.4}    # lithophanes: 100 % infill, 0.12 mm layers (1 Orca slice)

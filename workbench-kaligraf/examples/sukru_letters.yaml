@@ -1,0 +1,10 @@
+# Mode B: 3D letters, 20 cm cap height, 30 mm deep
+mode: letters
+text: ŞÜKRÜ
+font: Bebas Neue
+letter_height_cm: 20
+depth_mm: 30
+letter_colors: [siyah]
+face_color: beyaz
+mounting: [tape]
+oversize_policy: split

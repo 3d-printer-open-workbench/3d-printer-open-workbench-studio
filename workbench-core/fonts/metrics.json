@@ -1,0 +1,329 @@
+{
+ "sample": "Portalin | Your Brand",
+ "fonts": {
+  "tinos": {
+   "id": "tinos",
+   "name": "Tinos",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 3.0,
+   "min_cap_letters_cm": 4.5
+  },
+  "arimo": {
+   "id": "arimo",
+   "name": "Arimo",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 3.0
+  },
+  "style-script": {
+   "id": "style-script",
+   "name": "Style Script",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 10.0,
+   "min_cap_letters_cm": 15.0
+  },
+  "mansalva": {
+   "id": "mansalva",
+   "name": "Mansalva",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 2.5
+  },
+  "alex-brush": {
+   "id": "alex-brush",
+   "name": "Alex Brush",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 9.0,
+   "min_cap_letters_cm": 13.0
+  },
+  "marcellus": {
+   "id": "marcellus",
+   "name": "Marcellus",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 3.5,
+   "min_cap_letters_cm": 5.5
+  },
+  "montserrat": {
+   "id": "montserrat",
+   "name": "Montserrat",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 3.0,
+   "min_cap_letters_cm": 4.0
+  },
+  "cormorant-garamond": {
+   "id": "cormorant-garamond",
+   "name": "Cormorant Garamond",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 10.5,
+   "min_cap_letters_cm": 15.5
+  },
+  "bebas-neue": {
+   "id": "bebas-neue",
+   "name": "Bebas Neue",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 2.5
+  },
+  "playfair-display": {
+   "id": "playfair-display",
+   "name": "Playfair Display",
+   "category": "basic",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 8.5,
+   "min_cap_letters_cm": 12.5
+  },
+  "inter": {
+   "id": "inter",
+   "name": "Inter",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 3.0
+  },
+  "jost": {
+   "id": "jost",
+   "name": "Jost",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 3.0
+  },
+  "eb-garamond": {
+   "id": "eb-garamond",
+   "name": "EB Garamond",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 4.5,
+   "min_cap_letters_cm": 6.5
+  },
+  "cinzel": {
+   "id": "cinzel",
+   "name": "Cinzel",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 5.0,
+   "min_cap_letters_cm": 7.5
+  },
+  "bodoni-moda": {
+   "id": "bodoni-moda",
+   "name": "Bodoni Moda",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 4.5,
+   "min_cap_letters_cm": 6.5
+  },
+  "abril-fatface": {
+   "id": "abril-fatface",
+   "name": "Abril Fatface",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 9.5,
+   "min_cap_letters_cm": 14.0
+  },
+  "righteous": {
+   "id": "righteous",
+   "name": "Righteous",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 1.5,
+   "min_cap_letters_cm": 2.0
+  },
+  "cabin": {
+   "id": "cabin",
+   "name": "Cabin",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 2.5
+  },
+  "nunito-sans": {
+   "id": "nunito-sans",
+   "name": "Nunito Sans",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.5,
+   "min_cap_letters_cm": 3.5
+  },
+  "syncopate": {
+   "id": "syncopate",
+   "name": "Syncopate",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 3.0,
+   "min_cap_letters_cm": 4.5
+  },
+  "cormorant": {
+   "id": "cormorant",
+   "name": "Cormorant",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 10.5,
+   "min_cap_letters_cm": 15.5
+  },
+  "fraunces": {
+   "id": "fraunces",
+   "name": "Fraunces",
+   "category": "print",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 1.5,
+   "min_cap_letters_cm": 2.0
+  },
+  "dancing-script": {
+   "id": "dancing-script",
+   "name": "Dancing Script",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 8.5,
+   "min_cap_letters_cm": 13.0
+  },
+  "the-nautigal": {
+   "id": "the-nautigal",
+   "name": "The Nautigal",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 27.5,
+   "min_cap_letters_cm": null
+  },
+  "parisienne": {
+   "id": "parisienne",
+   "name": "Parisienne",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 7.5,
+   "min_cap_letters_cm": 11.0
+  },
+  "caramel": {
+   "id": "caramel",
+   "name": "Caramel",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 20.0,
+   "min_cap_letters_cm": 30.0
+  },
+  "caveat": {
+   "id": "caveat",
+   "name": "Caveat",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.5,
+   "min_cap_letters_cm": 4.0
+  },
+  "pacifico": {
+   "id": "pacifico",
+   "name": "Pacifico",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.0,
+   "min_cap_letters_cm": 3.0
+  },
+  "great-vibes": {
+   "id": "great-vibes",
+   "name": "Great Vibes",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 11.5,
+   "min_cap_letters_cm": 17.0
+  },
+  "sacramento": {
+   "id": "sacramento",
+   "name": "Sacramento",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 5.5,
+   "min_cap_letters_cm": 8.5
+  },
+  "cedarville-cursive": {
+   "id": "cedarville-cursive",
+   "name": "Cedarville Cursive",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 4.0,
+   "min_cap_letters_cm": 5.5
+  },
+  "allison": {
+   "id": "allison",
+   "name": "Allison",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 9.0,
+   "min_cap_letters_cm": 13.5
+  },
+  "shadows-into-light": {
+   "id": "shadows-into-light",
+   "name": "Shadows Into Light",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 3.5,
+   "min_cap_letters_cm": 5.0
+  },
+  "moon-dance": {
+   "id": "moon-dance",
+   "name": "Moon Dance",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 8.5,
+   "min_cap_letters_cm": 13.0
+  },
+  "ms-madi": {
+   "id": "ms-madi",
+   "name": "Ms Madi",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 5.5,
+   "min_cap_letters_cm": 8.0
+  },
+  "yellowtail": {
+   "id": "yellowtail",
+   "name": "Yellowtail",
+   "category": "cursive",
+   "turkish_missing": [],
+   "turkish_ok": true,
+   "min_cap_flat_cm": 2.5,
+   "min_cap_letters_cm": 3.5
+  }
+ }
+}

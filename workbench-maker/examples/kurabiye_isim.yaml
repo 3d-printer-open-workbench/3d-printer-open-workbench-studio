@@ -1,0 +1,9 @@
+generator: cookie_cutter
+name: kurabiye_ali
+params:
+  source: text
+  text: Ali
+  font: Pacifico
+  width_mm: 80
+  stamp: text        # empty stamp_text = the same name on the cookie
+  handle: ejector

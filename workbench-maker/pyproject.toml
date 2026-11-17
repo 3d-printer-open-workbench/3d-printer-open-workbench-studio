@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workbench-maker"
+version = "0.0.1"
+description = "Customizable print-ready generators (thermoform molds, keychains, QR plaques, ...) for OrcaSlicer + CANVAS (Workbench)"
+requires-python = ">=3.11"
+# Runs on Kaligraf's environment (like Glow) and imports kaligraf as a library.
+dependencies = [
+    "workbench-kaligraf>=0.1.1",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "mcp>=1.9",
+    "pyyaml>=6.0",
+    "segno>=1.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx"]
+
+[project.scripts]
+maker = "maker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+maker = ["web/*", "*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

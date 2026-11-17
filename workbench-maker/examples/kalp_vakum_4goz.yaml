@@ -1,0 +1,11 @@
+generator: thermoform
+name: kalp_vakum_4goz
+params:
+  method: vacuum
+  hose_d: 35
+  sheet: petg_05
+  shape: heart
+  width_mm: 60
+  depth_mm: 12
+  cavities: 4
+  closure: screw

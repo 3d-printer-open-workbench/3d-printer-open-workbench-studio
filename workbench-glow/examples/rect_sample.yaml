@@ -1,0 +1,10 @@
+design: rect
+text: Workbench
+font: Montserrat
+width_mm: 200
+frame_color: "#1F4D3A"     # green frame (and text)
+diffuser: pla_white        # white diffuser face
+led: ws2812b_10mm
+controller: bt_rgb_mini
+mount: desk
+job_id: rect_sample

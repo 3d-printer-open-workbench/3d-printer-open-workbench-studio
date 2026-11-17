@@ -1,0 +1,9 @@
+generator: pet_tag
+name: kunye_pamuk
+params:
+  shape: bone
+  name: Pamuk
+  phone: 0532 123 45 67
+  phone_side: back
+  back_text: Bulursanız arayın
+  count: 2

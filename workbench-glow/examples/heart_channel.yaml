@@ -1,0 +1,17 @@
+design: contour
+shape: heart              # kalp şeklinde kutu (Lightbox Maker tarzı hazır şekil)
+text: Ayşe
+font: Montserrat
+width_mm: 200
+depth_mm: 40
+frame_color: "#C0392B"
+led: cob_8mm
+controller: usb_dimmer
+led_mount: channel        # şeridi tutan LED kanalı
+channel_cover: true       # kanalın üstüne geçen difüzör kapak
+diffusion_mm: 0.2
+stroke_mm: 1.5
+holes:
+  - {type: circle, w: 6, x: 0, y: 40}
+mount: stand
+job_id: heart_channel

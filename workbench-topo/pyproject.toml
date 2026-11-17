@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workbench-topo"
+version = "1.2.0"
+description = "Print-ready 3D maps (trail, city, memory) for OrcaSlicer + CANVAS (Workbench)"
+requires-python = ">=3.11"
+dependencies = [
+    "workbench-core",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "shapely>=2.0",
+    "manifold3d>=2.5",
+    "trimesh>=4.0",
+    "rasterio>=1.4",
+    "matplotlib>=3.8",
+    "pillow>=10",
+    "pyyaml>=6.0",
+    "mapbox-earcut>=1.0",
+    "fast-simplification>=0.1",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "python-multipart>=0.0.9",
+    "mcp>=1.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+topo = "topo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+topo = ["web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
