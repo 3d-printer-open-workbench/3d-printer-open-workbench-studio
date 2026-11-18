@@ -68,6 +68,42 @@ def create_app() -> FastAPI:
         except ValueError as e:
             raise HTTPException(400, str(e))
 
+    from . import reels
+
+    @app.get("/reels")
+    def reels_sayfasi():
+        return FileResponse(WEB / "reels.html", media_type="text/html")
+
+    @app.get("/api/reels")
+    def reels_oku():
+        return reels.oku()
+
+    @app.put("/api/reels/{fid}")
+    def reels_guncelle(fid: str, govde: dict):
+        try:
+            return reels.guncelle(fid, govde)
+        except KeyError:
+            raise HTTPException(404, "Fikir bulunamadı")
+        except ValueError as e:
+            raise HTTPException(400, str(e))
+
+    @app.post("/api/reels/{fid}/not")
+    def reels_not(fid: str, govde: dict):
+        try:
+            return reels.not_ekle(fid, str(govde.get("metin") or ""))
+        except KeyError:
+            raise HTTPException(404, "Fikir bulunamadı")
+        except ValueError as e:
+            raise HTTPException(400, str(e))
+
+    @app.post("/api/reels-istek")
+    def reels_istek(govde: dict):
+        try:
+            return reels.istek_ekle(str(govde.get("tur") or ""), str(govde.get("metin") or ""),
+                                    govde.get("fikir_id"), int(govde.get("adet") or 7))
+        except ValueError as e:
+            raise HTTPException(400, str(e))
+
     @app.get("/api/filaments")
     def get_filaments():
         return products.filaments()

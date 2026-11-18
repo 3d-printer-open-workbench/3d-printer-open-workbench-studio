@@ -78,6 +78,10 @@ Studio tek başına çalışır. Ayrıca:
 - **`3d-printer-open-workbench-erp`** — maliyet, ürün reçetesi, stok ve teklif. `WORKBENCH_ERP_URL` verilirse renk
   kartelası sayfası (`/kartela`) ayarlanan filament rengini ERP'ye de iletir. Botla aynı paleti kullanmak için
   `WORKBENCH_PALETTE` (ya da `WORKBENCH_CONFIG`) değişkenini aynı `renk_paleti.yaml` dosyasına yöneltin.
+- **Reels takvimi (`/reels`)** — botun trend Reels fikirleri (senaryo, çekim talimatı, durum, notlar) tek sayfada;
+  "revize" / "yeni fikir" istekleri botun Claude ajanı için kuyruğa yazılır. Botun veri klasörünü okur:
+  `WORKBENCH_REELS_DIR`, yoksa `$WORKBENCH_DATA/03_Magaza/reels_takvimi`, yoksa
+  `$WORKBENCH_ROOT/veri/03_Magaza/reels_takvimi`, yoksa `$STUDIO_HOME/reels_takvimi`.
 
 ## Ayarlar
 

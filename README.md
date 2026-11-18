@@ -87,6 +87,10 @@ Studio runs fine on its own. It also pairs with:
 - **`3d-printer-open-workbench-erp`** — costing, BOM, stock and quotes. If `WORKBENCH_ERP_URL` is set, the colour
   card page (`/kartela`) also pushes calibrated filament colours to the ERP. To share one filament palette with the
   bot, point `WORKBENCH_PALETTE` (or `WORKBENCH_CONFIG`) at the same `renk_paleti.yaml`.
+- **Reels calendar (`/reels`)** — the bot's trend Reels ideas (script, shooting instructions, status, notes) in one
+  page; "revise" / "new ideas" requests are queued for the bot's Claude agent. It reads the bot's data folder:
+  `WORKBENCH_REELS_DIR`, else `$WORKBENCH_DATA/03_Magaza/reels_takvimi`, else
+  `$WORKBENCH_ROOT/veri/03_Magaza/reels_takvimi`, else `$STUDIO_HOME/reels_takvimi`.
 
 ## Configuration
 
